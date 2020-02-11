@@ -15,4 +15,7 @@ module.exports = {
     tableName: "knex_migrations",
     directory: "./migrations",
   },
+  seeds:{
+    directory: "./seeds"
+  }
 };
