@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-      <h2>To Do List</h2>
+    <h1>To Do List</h1>
+    <img 
+    id="schedule"
+    src="https://4.bp.blogspot.com/-wgkB4tyF6Go/VEETo61TbZI/AAAAAAAAojA/D6SyZsXOu0E/s800/techou_open.png" alt="schedule">
   <form v-on:submit.prevent>
     <input
+      id="form"
       type="text"
-      v-model="newItem" />
+      v-model="newItem"
+      placeholder="write task" />
     <button
+      class="add-btn"
       v-on:click="addItem">
-      Add
+       Add 
     </button>
   </form>
   <ul>
@@ -23,6 +29,7 @@
 
 
       <button
+       class="delete-btn"
        v-on:click="deleteItem(index)"
        >Delete</button>
     </li>
@@ -70,10 +77,22 @@ export default {
 </script>
 
 <style>
-#app {
-  max-width: 640px;
-  margin: 0 auto;
+body{
+  text-align: center;
+  background-color:#ff6f54;
+  font-family: serif;
 }
+#app {
+  max-width: 90%;
+  max-height: 2000px;
+  text-align: center;
+  background-color:rgb(248, 212, 165);
+}
+
+h1{
+  font-family: fantasy, serif;
+}
+
 #app ul{
   list-style: none;
 }
@@ -81,13 +100,42 @@ export default {
   color: grey;
 }
 
-button {
+#app > form{
+  font-size: 30px;
+}
+
+img{
+  width: 200px;
+}
+.add-btn {
   border: none;
-  border-radius: 20px;
-  line-height: 24px;
-  padding: 0 8px;
-  background: #07a0ec;
+  border-radius: 15px;
+  line-height: 50px;
+  margin-top: 0.5px;
+  margin-bottom: 0.5px;
+  margin-right: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  padding-left: 10px;
+  background:rgb(233, 143, 26);
   color: #fff;
   cursor: pointer;
 }
+
+.delete-btn {
+  border: none;
+  border-radius: 15px;
+  line-height: 50px;
+  margin-top: 0.5px;
+  margin-bottom: 0.5px;
+  margin-right: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  padding-left: 10px;
+  background:rgb(146, 216, 67);
+  color: #fff;
+  cursor: pointer;
+}
+
+
 </style>
