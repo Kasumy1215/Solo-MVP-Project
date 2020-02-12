@@ -42,22 +42,15 @@
 <script>
 // import addListToDb from "../db/updateToDoList"
 // import getListsFromDb from "../db/updateToDoList"
-
+// import todoStorage from "./main"
 export default {
   name: "App",
   data:function () {
     return {
     newItem: "",
-    todos: {
-      item:[
-        "Review Vue.js",
-        "Laundry",
-        "Tech Talk"
-        ]
-    }
+    todos: []
   }
 },
-
   methods: {
     addItem: function () {
       const todo = {
@@ -82,6 +75,7 @@ export default {
     }
   }
 };
+
 </script>
 
 <style>
