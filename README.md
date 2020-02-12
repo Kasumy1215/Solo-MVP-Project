@@ -1,4 +1,8 @@
-# to_do_list_with_vue
+# To Do List App
+This was created during my time as a student at Code Chrysalis. as a Solo MVP Project.
+
+## Created with 
+
 
 ## Project setup
 ```
