@@ -4,9 +4,10 @@
     <img 
     id="schedule"
     src="https://4.bp.blogspot.com/-wgkB4tyF6Go/VEETo61TbZI/AAAAAAAAojA/D6SyZsXOu0E/s800/techou_open.png" alt="schedule">
-  <form v-on:submit.prevent>
+  <form
+    id="form"
+    v-on:submit.prevent>
     <input
-      id="form"
       type="text"
       v-model="newItem"
       placeholder="write task" />
@@ -16,7 +17,8 @@
        Add 
     </button>
   </form>
-  <ul>
+  <ul
+   id= "lists">
     <li
      v-for="(todo, index, key) in todos" :key="key">
       <input
@@ -46,9 +48,15 @@ export default {
   data:function () {
     return {
     newItem: "",
-    todos: []
+    todos: {
+      item:[
+        "Review Vue.js",
+        "Laundry",
+        "Tech Talk"
+        ]
     }
-  },
+  }
+},
 
   methods: {
     addItem: function () {
@@ -82,14 +90,15 @@ body{
   background-color:#ff6f54;
   font-family: serif;
 }
+
 #app {
-  max-width: 90%;
-  max-height: 2000px;
   text-align: center;
   background-color:rgb(248, 212, 165);
 }
 
-h1{
+#app h1{
+  padding-top: 50px; 
+  height:50px;
   font-family: fantasy, serif;
 }
 
@@ -107,6 +116,7 @@ h1{
 img{
   width: 200px;
 }
+
 .add-btn {
   border: none;
   border-radius: 15px;
@@ -136,6 +146,5 @@ img{
   color: #fff;
   cursor: pointer;
 }
-
 
 </style>
