@@ -1,8 +1,8 @@
 # To Do List App
 This was created during my time as a student at Code Chrysalis. as a Solo MVP Project.
 
-## Created with 
-
+### Could learned the followings through creating this app 
+ Vue.js, PostgreSQL, Express, Knex, Heroku
 
 ## Project setup
 ```
@@ -24,5 +24,3 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
