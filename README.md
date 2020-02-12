@@ -1,7 +1,7 @@
 # To Do List App
 This was created during my time as a student at Code Chrysalis. as a Solo MVP Project.
 
-### Could learned the followings through creating this app 
+### Could learned the followings through creating this simple app 
  Vue.js, PostgreSQL, Express, Knex, Heroku
 
 ## Project setup
